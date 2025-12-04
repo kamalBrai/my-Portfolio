@@ -1,4 +1,7 @@
 tailwind.config = {
+    // REQUIRED FOR DARK MODE TOGGLE
+    darkMode: 'class', 
+
     theme:{
         extend:{
             gridTemplateColumns:{
@@ -12,15 +15,16 @@ tailwind.config = {
                 spin_slow: 'spin 6s linear infinite'
             },
             colors: {
-                lightHover: '#fcf4ff',
-                darkHover: '#2a004a',
-                darkTheme: '#11001F'
+                // Custom colors for light/dark theme transition
+                lightHover: '#fcf4ff', // Light theme hover (soft white/pink)
+                darkHover: '#2a004a', // Dark theme hover (deep purple)
+                darkTheme: '#11001F'  // Dark theme main background (almost black)
             },
             boxShadow:{
+                // Defined sharp shadows
                 'black':'4px 4px 0 #000', 
                 'white':'4px 4px 0 #fff', 
             }
         }
-      
     }
 }
